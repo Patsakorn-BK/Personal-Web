@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Ice</title>
+    <link rel="stylesheet" href="css.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <img class="logo" src="img/logo1.png" alt="Logo"></img> 
+
+            <nav class="navbar">
+                <a href="index.html"><b>Home</b></a>
+                <a href="index2.html"><b>Performance</b></a> 
+                
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-detail">
+                ___________________________________________________________________________________________________________________________________<br><br>
+                <br><br>
+                <h1>Performance</h1>
+<br>
+<div class="container">
+&nbsp;
+    <div class="card">
+        <img src="img/cer.png" onclick="openPopup('img/cer.png')">
+        <h2>อบรมออกแบบเว็บไซต์ <br>HTML + CSS</h2>
+        
+    </div>
+
+    <div class="card">
+        <img src="img/cer2.png" onclick="openPopup('img/cer2.png')">
+        <h2>อบรมศึกษางานวิจัย</h2>
+        <p>ประกวด NSC</p>
+    </div>
+
+    <div class="card">
+        <img src="img/work2.png" onclick="openPopup('img/work2.png')">
+        <h2>ออกแบบ UX/UI</h2>
+        <p>Figma ออกแบบแอบพลิเคชัน</p>
+    </div>
+
+</div>
+<br><br><br><br><br><br>
+
+<div class="popup" id="popup" onclick="closePopup()">
+    <img id="popupImg">
+</div>
+<script>
+function openPopup(src) {
+    document.getElementById('popupImg').src = src;
+    document.getElementById('popup').style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = "none";
+}
+</script>
+
+</div>                
+            </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
